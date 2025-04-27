@@ -1,20 +1,25 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
+name: Issue template
+about: Create issue
+title: "[FEAT/FIX/DOCS/DESIGN/REFACTOR/CHORE] 이슈 제목"
 labels: ''
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+---
+name: Issue template
+about: Create issue
+title: "[FEAT/FIX/DOCS/DESIGN/REFACTOR/CHORE] 이슈 제목"
+labels: ''
+assignees: ''
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+---
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Issue
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+- 기능 간단 설명
+
+
+## To-do
+- [ ]
