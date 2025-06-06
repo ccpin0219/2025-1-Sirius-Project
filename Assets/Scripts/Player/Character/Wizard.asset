@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8bcf705fb880f49baaa2d3774533b3, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  characterName: "\uB9C8\uBC95\uC0AC"
+  maxHp: 90
+  speed: 20
+  portrait: {fileID: 21300000, guid: 0afef707bf7ebd746893d8380159c07d, type: 3}
+  defaultCards:
+  - {fileID: 11400000, guid: 3ee94b49e7ccea94886db1d9445dd226, type: 2}
+  - {fileID: 11400000, guid: 035dd69f4d19f5543a8bf9b6b263c16c, type: 2}
+  - {fileID: 11400000, guid: a8280273611f4ee41bb2a25ecc62e844, type: 2}
