@@ -414,6 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18b0b211e442b0c488d2f44c0813fd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetSelector: {fileID: 794965329}
   cardPrefab: {fileID: 5158400181465389933, guid: 97615dca6150e2c459f7be2c8e5d964f, type: 3}
   cardParent: {fileID: 733469635}
   cardDataList:
@@ -590,6 +591,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &794965328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794965330}
+  - component: {fileID: 794965329}
+  m_Layer: 0
+  m_Name: TargetSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &794965329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794965328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc4d2e949add1e47ba779852cb8938d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetList: []
+  playerHighlightColor: {r: 1, g: 1, b: 0.7, a: 1}
+  enemyHighlightColor: {r: 1, g: 0.7, b: 0.7, a: 1}
+--- !u!4 &794965330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794965328}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.06025, y: 30.263874, z: -0.80055195}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1009769622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,3 +1429,4 @@ SceneRoots:
   - {fileID: 1238334275}
   - {fileID: 742479058}
   - {fileID: 1612184061}
+  - {fileID: 794965330}
