@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4b359fafbb466409fda102dc43c3d9, type: 3}
+  m_Name: "\uAC1C\uC314\uAC8C_\uB54C\uB9AC\uAE30"
+  m_EditorClassIdentifier: 
+  cardName: "\uAC1C\uC314\uAC1C \uB54C\uB9AC\uAE30"
+  description: "\uC9C4\uC790 \uAC81\uB098 \uC384\uAC8C \uB54C\uB9BC"
+  cost: 3
+  type: 0
+  artwork: {fileID: 21300000, guid: b904236e27227094cacbbd17e414a4ff, type: 3}
+  attackPower: 10
+  defensePower: 0
+  healPower: 0
