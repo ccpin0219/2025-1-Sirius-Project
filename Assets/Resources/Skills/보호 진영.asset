@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60dcd9baeb683aa468a0ab76fdb9dc0a, type: 3}
+  m_Name: "\uBCF4\uD638 \uC9C4\uC601"
+  m_EditorClassIdentifier: 
+  skillName: "\uBCF4\uD638 \uC9C4\uC601"
+  isAttack: 0
+  isAOE: 1
+  power: 6
+  artSprite: {fileID: 21300000, guid: d2e949e40ae17a647ac2a1a8f73aebb0, type: 3}

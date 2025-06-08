@@ -1,26 +1,47 @@
-using System;
+ï»¿using System.Collections.Generic;
+using UnityEngine;
 
-public class GameManager
+public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    public CharacterManager characterManager;  // Ä³¸¯ÅÍ µ¥ÀÌÅÍ °ü¸® ¸Å´ÏÀú
-    public TurnManager turnManager;            // ÅÏ Á¦¾î ¸Å´ÏÀú
 
-    public GameManager()
+    public TurnManager turnManager;
+    public CharacterSpawner spawner;
+    public PlayerSkillController playerSkillController;
+
+    public List<Enemy> enemies = new();
+
+    private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
-        characterManager = new CharacterManager();  // Ä³¸¯ÅÍ ¸Å´ÏÀú ÃÊ±âÈ­
-        turnManager = new TurnManager();            // ÅÏ ¸Å´ÏÀú ÃÊ±âÈ­
+        DontDestroyOnLoad(gameObject);
     }
 
-    // °ÔÀÓ ½ÃÀÛ
-    public void StartGame()
+    private void Start()
     {
-        Console.WriteLine("·ÎµùÁß...");
+        if (spawner == null || turnManager == null || playerSkillController == null)
+        {
+            Debug.LogError("GameManagerì— í•„ìš”í•œ ì»´í¬ë„ŒíŠ¸ê°€ ì—°ê²°ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
+            return;
+        }
 
-        characterManager.LoadCharacters(); // Ä³¸¯ÅÍ Á¤º¸ ºÒ·¯¿À±â
-        turnManager.StartBattle();         // ÀüÅõ ½ÃÀÛ
+        spawner.SpawnCharacters();
 
-        Console.WriteLine("°ÔÀÓÀÌ ½ÃÀÛµÇ¾ú½À´Ï´Ù.");
+        // ì•„êµ° + ì êµ° ë¦¬ìŠ¤íŠ¸ ìƒì„±
+        List<Character> allCharacters = new List<Character>
+        {
+            spawner.warriorObj.GetComponent<Character>(),
+            spawner.mageObj.GetComponent<Character>(),
+            spawner.wolf1Obj.GetComponent<Enemy>(),
+            spawner.wolf2Obj.GetComponent<Enemy>()
+        };
+
+        turnManager.InitTurnOrder(allCharacters);
     }
 }
